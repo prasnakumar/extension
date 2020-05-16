@@ -1,0 +1,7 @@
+# depslib dependency file v1.0
+1589649539 source:/home/prasanna/cpp/txt_to_word/txt to word/main.cpp
+	<iostream>
+	<fstream>
+	<string.h>
+	<ctime>
+
