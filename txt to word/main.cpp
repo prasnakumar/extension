@@ -15,7 +15,7 @@ cin>>file2;
     fstream stud;
     stud.open(file2,ios::app);
     cin.ignore();
-    cout<<"enter the content of file \n";
+    cout<<"enter the content into the  file \n";
     cin.getline(id,1000);
     cout<<"done";
     stud<<id;
@@ -23,11 +23,11 @@ cin>>file2;
 }
 void changefile()
 {char filename[30],d[60];
-cout<<"enter the file name that you want to change ";
+cout<<"enter the file name that you want to change with extension";
 cin>>filename;
 fstream stud;
 stud.open(filename);
-cout<<"enter the file name that you want the docx to be with extension";
+cout<<"enter the file name that you want the to be with extension";
 cin>>d;
 rename(filename,d);
 cout<<"renaming the file is done";
@@ -36,6 +36,8 @@ cout<<"renaming the file is done";
 int main()
 {
     int c,a;
+bool flag=true;
+while(flag){
 
 cout<<"enter 1.to open and write in a file \n 2. to covert to docx\n";
     cin>>c;
@@ -46,6 +48,14 @@ case 1:
     break;
 case 2:
     changefile();
-    break;}
+    break;
+default:exit(0);
 
 }
+char y;cout<<"enter y to cont....\n";
+cin>>y;
+if(y!='y')
+{flag=false;
+}
+
+}}
